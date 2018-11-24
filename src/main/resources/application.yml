@@ -1,0 +1,26 @@
+server:
+  port: 8000
+
+spring:
+#  session:
+#    store-type: redis
+#    redis:
+#      cleanup-cron: 0 */2 * * *
+#      flush-mode: on_save
+#      namespace: 'redis-demo:session'
+#  redis:
+#    cluster:
+#      nodes:
+#      - 3.121.4.196:7001
+#      - 3.121.4.196:7002
+#      - 3.121.4.196:7003
+#     - 3.121.4.196:7004
+#      - 3.121.4.196:7005
+#      - 3.121.4.196:7006
+
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+
+instance:
+  name: test-instance-name
