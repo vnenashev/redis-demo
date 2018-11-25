@@ -1,0 +1,16 @@
+spring:
+  session:
+    store-type: redis
+    redis:
+      cleanup-cron: 0 */2 * * *
+      flush-mode: on_save
+      namespace: 'redis-demo:session'
+  redis:
+    cluster:
+      nodes:
+        - 172.31.26.148:7001
+        - 172.31.31.162:7001
+        - 172.31.16.77:7001
+        - 172.31.26.148:7002
+        - 172.31.31.162:7002
+        - 172.31.16.77:7002
