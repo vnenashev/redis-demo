@@ -1,0 +1,27 @@
+#clusterServersConfig:
+#  nodeAddresses:
+#    - redis://172.31.26.148:7001
+#    - redis://172.31.31.162:7001
+#    - redis://172.31.16.77:7001
+#    - redis://172.31.26.148:7002
+#    - redis://172.31.31.162:7002
+#    - redis://172.31.16.77:7002
+#clusterServersConfig:
+#  nodeAddresses:
+#    - redis://18.195.169.32:6379
+#    - redis://18.195.119.199:6379
+#    - redis://18.184.238.86:6379
+#    - redis://18.185.13.244:6379
+#    - redis://18.184.28.116:6379
+#    - redis://3.121.236.226:6379
+replicatedServersConfig:
+  password: "PjbzAdjB4jk6UmdPnv36"
+  timeout: 20000
+  connectTimeout: 20000
+  sslEnableEndpointIdentification: false
+  nodeAddresses:
+    - "rediss://3.121.203.66:26379"
+    - "rediss://3.121.203.66:26380"
+    - "rediss://3.121.203.66:26381"
+
+codec: !<org.redisson.codec.FstCodec> {}
